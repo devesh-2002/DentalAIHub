@@ -1,0 +1,122 @@
+[
+    {
+        "symptom": "Toothache",
+        "questions": [
+            {"question": "Is the pain constant or intermittent?", "label": null},
+            {"question": "Do you feel sensitivity to hot or cold?", "label": null},
+            {"question": "Is the pain triggered by biting or chewing?", "label": null},
+            {"question": "Have you noticed any swelling or redness in the affected area?", "label": null},
+            {"question": "Do you notice any bad taste in your mouth?", "label": null},
+            {"question": "Do you have difficulty in opening your mouth?", "label": null},
+            {"question": "Have you experienced any recent injury to your mouth?", "label": null},
+            {"question": "Is there any visible cavity or hole in your tooth?", "label": null},
+            {"question": "Do you grind your teeth at night?", "label": null},
+            {"question": "Have you been diagnosed with any systemic conditions like diabetes?", "label": null},
+            {"question": "Have you taken any over-the-counter pain relievers, and did they help?", "label": null},
+            {"question": null, "label": "Caries"}
+        ]
+    },
+    {
+        "symptom": "Bleeding Gums",
+        "questions": [
+            {"question": "Do your gums bleed when you brush or floss?", "label": null},
+            {"question": "Have you noticed any swelling or redness in your gums?", "label": null},
+            {"question": "Do you wear braces or any dental appliances?", "label": null},
+            {"question": "Have you ever had a tooth pulled out?", "label": null},
+            {"question": "Have you experienced any recent injury to your mouth?", "label": null},
+            {"question": "Do you take any blood-thinning medications?", "label": null},
+            {"question": "Have you changed your toothbrush or oral hygiene routine recently?", "label": null},
+            {"question": null, "label": "Gingivitis"}
+        ]
+    },
+    {
+        "symptom": "Tooth Sensitivity",
+        "questions": [
+            {"question": "Do you feel a sharp pain when consuming hot or cold beverages?", "label": null},
+            {"question": "Does the sensitivity linger after the stimulus is removed?", "label": null},
+            {"question": "Do you have any visible cracks or fractures in your teeth?", "label": null},
+            {"question": "Do you use a hard-bristle toothbrush?", "label": null},
+            {"question": "Have you noticed any receding gums?", "label": null},
+            {"question": "Have you had any recent dental procedures?", "label": null},
+            {"question": "Have you changed your toothpaste recently?", "label": null},
+            {"question": null, "label": "Tooth Sensitivity"}
+        ]
+    },
+    {
+        "symptom": "Mouth Ulcer",
+        "questions": [
+            {"question": "Do you have a painful sore or lesion in your mouth?", "label": null},
+            {"question": "Is the sore white or yellowish with a red border?", "label": null},
+            {"question": "Have you had multiple ulcers at the same time?", "label": null},
+            {"question": "Do you have a history of mouth ulcers?", "label": null},
+            {"question": "Have you been under increased stress recently?", "label": null},
+            {"question": "Do you have any nutritional deficiencies?", "label": null},
+            {"question": null, "label": "Mouth Ulcer"}
+        ]
+    },
+    {
+        "symptom": "Cracked Tooth",
+        "questions": [
+            {"question": "Have you experienced a sudden and sharp pain when biting or chewing?", "label": null},
+            {"question": "Does the pain come and go?", "label": null},
+            {"question": "Is there any visible crack or fracture in your tooth?", "label": null},
+            {"question": "Do you have a habit of clenching or grinding your teeth?", "label": null},
+            {"question": "Have you recently experienced trauma to your mouth?", "label": null},
+            {"question": "Do you have a history of large fillings in your tooth?", "label": null},
+            {"question": null, "label": "Cracked Tooth"}
+        ]
+    },
+    {
+        "symptom": "Cavities",
+        "questions": [
+            {"question": "Do you have visible holes or pits in your teeth?", "label": null},
+            {"question": "Do you feel pain or sensitivity when consuming sweet, hot, or cold items?", "label": null},
+            {"question": "Have you noticed any discoloration on your teeth?", "label": null},
+            {"question": "Do you experience bad breath?", "label": null},
+            {"question": "Is there a family history of dental cavities?", "label": null},
+            {"question": "Do you consume sugary snacks or drinks frequently?", "label": null},
+            {"question": null, "label": "Cavities"}
+        ]
+    },
+    {
+        "symptom": "Tooth Discoloration",
+        "questions": [
+            {"question": "Have you noticed any changes in the color of your teeth?", "label": null},
+            {"question": "Is the discoloration localized to a specific tooth or generalized?", "label": null},
+            {"question": "Have you recently consumed foods or drinks that may stain teeth?", "label": null},
+            {"question": "Do you have a history of smoking or tobacco use?", "label": null},
+            {"question": "Have you had any recent trauma to your mouth?", "label": null},
+            {"question": null, "label": "Tooth Discoloration"}
+        ]
+    },
+    {
+        "symptom": "Hypodontia",
+        "questions": [
+            {"question": "Do you have fewer teeth than normal?", "label": null},
+            {"question": "Have you noticed gaps or spaces between your teeth?", "label": null},
+            {"question": "Is there a family history of missing teeth?", "label": null},
+            {"question": "Have you undergone orthodontic treatment in the past?", "label": null},
+            {"question": "Do you have any syndromes or medical conditions associated with tooth abnormalities?", "label": null},
+            {"question": null, "label": "Hypodontia"}
+        ]
+    },
+    {
+        "symptom": "Oral Cancer",
+        "questions": [
+            {"question": "Have you noticed any unusual lumps or sores in your mouth?", "label": null},
+            {"question": "Is there persistent hoarseness or difficulty in swallowing?", "label": null},
+            {"question": "Do you have a history of tobacco or alcohol use?", "label": null},
+            {"question": "Have you been exposed to human papillomavirus (HPV)?", "label": null},
+            {"question": "Have you noticed any changes in your voice or speech patterns?", "label": null},
+            {"question": "Is there unexplained weight loss?", "label": null},
+            {"question": null, "label": "Oral Cancer"}
+        ]
+    },
+    {
+        "symptom": "Unknown",
+        "questions": [
+            {"question": "I'm sorry, I couldn't understand. Can you please provide more details about your symptoms?", "label": null},
+            {"question": null, "label": "Unknown"}
+        ]
+    }
+]
