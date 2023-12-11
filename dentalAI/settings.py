@@ -71,12 +71,12 @@ DJANGO_NEXT = {
 }
 
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
 
 
 AUTH_PASSWORD_VALIDATORS = [
@@ -126,9 +126,9 @@ CSRF_COOKIE_SECURE = True
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'your_database',
+        'NAME': 'medicalstore',
         'USER': 'postgres',
-        'PASSWORD': '',
+        'PASSWORD': 'devesh',
         'HOST': 'localhost',
         'PORT': '5432',
     }
