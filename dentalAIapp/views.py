@@ -1,8 +1,9 @@
 # views.py
 from imp import load_module
 from django.shortcuts import render
+
+from dentalAIapp.models import Product
 from .symptom_checker import SymptomCheckerBot
-import json
 from django.shortcuts import render
 from django.http import HttpResponse, JsonResponse
 from django.views.decorators.csrf import csrf_exempt  
@@ -214,3 +215,13 @@ def get_disease_label(predicted_class):
 
 def upload_form(request):
     return render(request, 'upload_form.html')
+
+
+def product_list(request):
+    products = Product.objects.all()
+    serialized_products = [
+        {'name': product.name, 'image': product.image}  
+        for product in products
+    ]
+    return JsonResponse(serialized_products, safe=False)
+
