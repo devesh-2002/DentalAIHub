@@ -54,10 +54,4 @@ In main folder :
    django-admin manage.py runserver
 
    ```
-### Screenshots 
-![image](https://github.com/devesh-2002/DentalAIHub/assets/79015420/28c3480f-a83d-40fe-83da-d9aa4cfea504)
-![image](https://github.com/devesh-2002/DentalAIHub/assets/79015420/72dc7f69-0db6-49d8-86cf-e32bf22f2418)
-![image](https://github.com/devesh-2002/DentalAIHub/assets/79015420/aad35574-4a9d-48c7-aca1-f4613f4218d5)
-![image](https://github.com/devesh-2002/DentalAIHub/assets/79015420/f63d6c81-9ddf-410f-a2c3-13bb13de8ea1)
-![image](https://github.com/devesh-2002/DentalAIHub/assets/79015420/88ff2b7c-5bc4-436b-90ad-c14ca0617fe1)
 
