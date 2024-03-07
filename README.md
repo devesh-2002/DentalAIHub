@@ -23,23 +23,18 @@ DentalAIHub is an AI based Dental E-Clinic, where you can identify your dental d
 3. Create a new env folder
    ```
    virtualenv env
-   
    ```
-
    ```
    env/Scripts/activate
-   
    ```
 5. Install the requirements.txt file
    ```
    pip install -r requirements.txt
-   
     ```
 6. In the dentalAI/frontend folder, type : 
 
     ```
    npm install
-   
    ```
 7. Run the backend and frontend separately :
  
@@ -47,12 +42,10 @@ In frontend folder :
    ```
    npm run build
    npm start
-
    ```
    
 In main folder : 
    ```
    django-admin manage.py runserver
-
    ```
 
