@@ -10,7 +10,7 @@ DentalAIHub is an AI based Dental E-Clinic, where you can identify your dental d
 ### Tech Stack
 1. Django
 2. Next.js
-3. Chakra-UI
+3. Shadcn/ui 
 4. Jupyter Notebook
 5. PostgreSQL
 6. Stripe
@@ -35,17 +35,18 @@ DentalAIHub is an AI based Dental E-Clinic, where you can identify your dental d
    pip install -r requirements.txt
    
     ```
-7. In the frontend folder, type yarn
+6. In the dentalAI/frontend folder, type : 
 
     ```
-   yarn
+   npm install
    
    ```
-9. Run the backend and frontend separately :
+7. Run the backend and frontend separately :
  
 In frontend folder : 
    ```
-   yarn dev
+   npm run build
+   npm start
 
    ```
    
