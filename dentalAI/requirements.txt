@@ -5,4 +5,4 @@ django-nextjs
 tensorflow
 psycopg2-binary
 django-cors-headers
-guincorn
+gunicorn
