@@ -61,6 +61,7 @@ def get_disease_label(predicted_class):
 @csrf_exempt 
 def product_list(request):
     products = MedicalProduct.objects.all()
+    print(products)
     serialized_products = [
         {'name': product.name, 'image': product.image, 'price':product.price}  
         for product in products
