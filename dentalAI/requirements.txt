@@ -12,3 +12,4 @@ langchain-community
 langchain-openai
 python-dotenv
 llama-index
+gunicorn
