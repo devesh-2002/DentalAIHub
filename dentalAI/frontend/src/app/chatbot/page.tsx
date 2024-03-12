@@ -10,26 +10,43 @@ export default function Chat() {
   const [messages, setMessages] = useState<{ id: number, role: string, content: string }[]>([]);
   const [input, setInput] = useState('');
 
-  const simulateAIResponse = (input: string) => {
-    return 'This is a simulated response from the AI.';
+  const simulateAIResponse = async (input: string) => {
+    try {
+      const response = await fetch('http://localhost:8000/chatbot', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ input }),
+      });
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      const data = await response.json();
+      console.log(data)
+      return data.response;
+    } catch (error) {
+      console.error('Error:', error);
+      return 'An error occurred while fetching data';
+    }
   };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setInput(e.target.value);
   };
 
-  const handleSimulatedSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSimulatedSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const response = simulateAIResponse(input);
-    
-    setMessages(prevMessages => [
+    const response = await simulateAIResponse(input);
+
+    setMessages((prevMessages) => [
       ...prevMessages,
-      { id: prevMessages.length, role: 'user', content: input }
+      { id: prevMessages.length, role: 'user', content: input },
     ]);
 
-    setMessages(prevMessages => [
+    setMessages((prevMessages) => [
       ...prevMessages,
-      { id: prevMessages.length, role: 'assistant', content: response }
+      { id: prevMessages.length, role: 'assistant', content: response },
     ]);
 
     setInput('');
