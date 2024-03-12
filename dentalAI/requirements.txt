@@ -5,4 +5,11 @@ django-nextjs
 tensorflow
 psycopg2-binary
 django-cors-headers
+langchain-openai
+langchain
+chroma
+langchain-community
+langchain-openai
+python-dotenv
+llama-index
 gunicorn

@@ -11,11 +11,16 @@ import tensorflow as tf
 from tensorflow import keras
 from keras.models import load_model
 from django.views.decorators.csrf import csrf_exempt
+from django.http import JsonResponse, HttpResponseBadRequest
+from django.views.decorators.csrf import csrf_exempt
+from .rag_chatbot import query_openai
+
 
 
 from django_nextjs.render import render_nextjs_page_sync
 def index(request):
     return render_nextjs_page_sync(request)
+
 @csrf_exempt 
 def disease_classification(request):
     if request.method == 'POST':
@@ -67,3 +72,27 @@ def product_list(request):
         for product in products
     ]
     return JsonResponse(serialized_products, safe=False)
+
+import json
+
+@csrf_exempt 
+def query_openai_view(request):
+    if request.method == 'POST':
+        try:
+            data = json.loads(request.body)
+            print(data)
+            input_text = data.get('input')
+            print(input_text)
+            if input_text:
+                response = query_openai(input_text)
+                if isinstance(response, dict):
+                    return JsonResponse({'response': response})
+                else:
+                    serialized_response = json.dumps(str(response))
+                    return JsonResponse({'response': serialized_response})
+            else:
+                return HttpResponseBadRequest("No input provided.")
+        except json.JSONDecodeError:
+            return HttpResponseBadRequest("Invalid JSON format.")
+    else:
+        return HttpResponseBadRequest("Only POST requests are allowed.")
