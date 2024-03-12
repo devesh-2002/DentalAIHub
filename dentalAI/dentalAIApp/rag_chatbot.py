@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 from llama_index.core import VectorStoreIndex, SimpleDirectoryReader, StorageContext, load_index_from_storage
 
 load_dotenv()
-os.environ['OPENAI_API_KEY'] = "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"
+os.environ['OPENAI_API_KEY'] = ""
 
 PERSIST_DIR = "./storage"
 if not os.path.exists(PERSIST_DIR):
