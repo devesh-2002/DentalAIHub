@@ -52,6 +52,7 @@ In frontend folder :
    
 In main folder : 
    ```
+   export DJANGO_SETTINGS_MODULE="dentalAI.settings"
    django-admin manage.py runserver
 
    ```
