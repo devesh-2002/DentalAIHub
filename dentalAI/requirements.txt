@@ -12,4 +12,7 @@ langchain-community
 langchain-openai
 python-dotenv
 llama-index
+torch
+transformers
+pytesseract
 gunicorn

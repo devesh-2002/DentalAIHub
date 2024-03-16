@@ -14,6 +14,7 @@ from django.views.decorators.csrf import csrf_exempt
 from django.http import JsonResponse, HttpResponseBadRequest
 from django.views.decorators.csrf import csrf_exempt
 from .rag_chatbot import query_openai
+from .ner import extract_entities_from_image
 
 
 
@@ -96,3 +97,12 @@ def query_openai_view(request):
             return HttpResponseBadRequest("Invalid JSON format.")
     else:
         return HttpResponseBadRequest("Only POST requests are allowed.")
+
+@csrf_exempt 
+def ner_view(request):
+    if request.method == 'POST':
+        file = request.FILES['image']
+        entities = extract_entities_from_image(file)
+        return JsonResponse({"entities": entities})
+    else:
+        return JsonResponse({"error": "Invalid request"})

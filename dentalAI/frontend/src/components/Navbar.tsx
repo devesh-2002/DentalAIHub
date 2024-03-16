@@ -48,7 +48,14 @@ export function NavigationMenuDemo() {
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <ModeToggle />
+            <Link href="/ner-prescription" legacyBehavior passHref>
+              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                Prescription to Entity
+              </NavigationMenuLink>
+            </Link>
+          </NavigationMenuItem>
+          <NavigationMenuItem className="mx-3">
+            <ModeToggle  />
           </NavigationMenuItem>
         </NavigationMenuList>
       </NavigationMenu>
