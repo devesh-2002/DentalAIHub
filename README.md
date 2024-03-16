@@ -4,7 +4,8 @@
 DentalAIHub is an AI based Dental E-Clinic, where you can identify your dental disease in just a matter of few seconds. This project contains several features : 
 1. **AI ChatBot** : This chatbot interacts with users, and can identify the possibility of a disease by the user's symptoms. This is a RAG based OpenAI chatbot. 
 2. **Disease Classification** : Just enter a photo of the affected part of your mouth, and get to know the possibility of a dental disease. This is a CNN Model, which is made by fine tuning a pretrained model - XCeption.
-3. **Medical Store** : This is a Medical Store exclusively related to Oral health.
+3. **Natural Entity Recognition** : Detect Entities from a Dental Prescription. Pytessaract used for Image to Text conversion and pre-trained model DBERT, fine tuned on Clinical NER used for detecting Entities.  
+4. **Medical Store** : This is a Medical Store exclusively related to Oral health.
 
 
 ### Tech Stack
@@ -24,7 +25,7 @@ DentalAIHub is an AI based Dental E-Clinic, where you can identify your dental d
    virtualenv env
    ```
    ```
-   env/Scripts/activate
+   source env/Scripts/activate
    ```
 5. Install the requirements.txt file
    ```
