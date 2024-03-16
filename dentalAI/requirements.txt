@@ -15,3 +15,4 @@ llama-index
 torch
 transformers
 pytesseract
+gunicorn
